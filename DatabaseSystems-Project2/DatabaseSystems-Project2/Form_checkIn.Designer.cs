@@ -36,11 +36,13 @@
             this.label_userID = new System.Windows.Forms.Label();
             this.label_bookID = new System.Windows.Forms.Label();
             this.label_blpLabel = new System.Windows.Forms.Label();
+            this.textBox_dateOut = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_submit
             // 
-            this.button_submit.Location = new System.Drawing.Point(160, 215);
+            this.button_submit.Location = new System.Drawing.Point(160, 245);
             this.button_submit.Name = "button_submit";
             this.button_submit.Size = new System.Drawing.Size(75, 23);
             this.button_submit.TabIndex = 15;
@@ -50,14 +52,14 @@
             // 
             // textBox_dateIn
             // 
-            this.textBox_dateIn.Location = new System.Drawing.Point(160, 164);
+            this.textBox_dateIn.Location = new System.Drawing.Point(160, 200);
             this.textBox_dateIn.Name = "textBox_dateIn";
             this.textBox_dateIn.Size = new System.Drawing.Size(138, 20);
             this.textBox_dateIn.TabIndex = 14;
             // 
             // textBox_userID
             // 
-            this.textBox_userID.Location = new System.Drawing.Point(160, 121);
+            this.textBox_userID.Location = new System.Drawing.Point(160, 119);
             this.textBox_userID.Name = "textBox_userID";
             this.textBox_userID.Size = new System.Drawing.Size(138, 20);
             this.textBox_userID.TabIndex = 13;
@@ -72,7 +74,7 @@
             // label_dateIn
             // 
             this.label_dateIn.AutoSize = true;
-            this.label_dateIn.Location = new System.Drawing.Point(101, 167);
+            this.label_dateIn.Location = new System.Drawing.Point(101, 203);
             this.label_dateIn.Name = "label_dateIn";
             this.label_dateIn.Size = new System.Drawing.Size(42, 13);
             this.label_dateIn.TabIndex = 11;
@@ -81,7 +83,7 @@
             // label_userID
             // 
             this.label_userID.AutoSize = true;
-            this.label_userID.Location = new System.Drawing.Point(101, 124);
+            this.label_userID.Location = new System.Drawing.Point(101, 122);
             this.label_userID.Name = "label_userID";
             this.label_userID.Size = new System.Drawing.Size(43, 13);
             this.label_userID.TabIndex = 10;
@@ -105,11 +107,29 @@
             this.label_blpLabel.TabIndex = 8;
             this.label_blpLabel.Text = "CHECK IN";
             // 
+            // textBox_dateOut
+            // 
+            this.textBox_dateOut.Location = new System.Drawing.Point(160, 159);
+            this.textBox_dateOut.Name = "textBox_dateOut";
+            this.textBox_dateOut.Size = new System.Drawing.Size(138, 20);
+            this.textBox_dateOut.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(101, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Date Out";
+            // 
             // Form_checkIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 285);
+            this.ClientSize = new System.Drawing.Size(397, 314);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox_dateOut);
             this.Controls.Add(this.button_submit);
             this.Controls.Add(this.textBox_dateIn);
             this.Controls.Add(this.textBox_userID);
@@ -136,5 +156,7 @@
         private System.Windows.Forms.Label label_userID;
         private System.Windows.Forms.Label label_bookID;
         private System.Windows.Forms.Label label_blpLabel;
+        private System.Windows.Forms.TextBox textBox_dateOut;
+        private System.Windows.Forms.Label label1;
     }
 }

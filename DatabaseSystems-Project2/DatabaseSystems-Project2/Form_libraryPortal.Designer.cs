@@ -38,15 +38,16 @@
             // label_libraryPortal
             // 
             this.label_libraryPortal.AutoSize = true;
-            this.label_libraryPortal.Location = new System.Drawing.Point(195, 34);
+            this.label_libraryPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_libraryPortal.Location = new System.Drawing.Point(102, 28);
             this.label_libraryPortal.Name = "label_libraryPortal";
-            this.label_libraryPortal.Size = new System.Drawing.Size(99, 13);
+            this.label_libraryPortal.Size = new System.Drawing.Size(303, 37);
             this.label_libraryPortal.TabIndex = 0;
             this.label_libraryPortal.Text = "LIBRARY PORTAL";
             // 
             // button_checkOut
             // 
-            this.button_checkOut.Location = new System.Drawing.Point(197, 81);
+            this.button_checkOut.Location = new System.Drawing.Point(80, 103);
             this.button_checkOut.Name = "button_checkOut";
             this.button_checkOut.Size = new System.Drawing.Size(97, 23);
             this.button_checkOut.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // button_checkIn
             // 
-            this.button_checkIn.Location = new System.Drawing.Point(197, 135);
+            this.button_checkIn.Location = new System.Drawing.Point(80, 142);
             this.button_checkIn.Name = "button_checkIn";
             this.button_checkIn.Size = new System.Drawing.Size(97, 23);
             this.button_checkIn.TabIndex = 2;
@@ -66,7 +67,7 @@
             // 
             // button_search
             // 
-            this.button_search.Location = new System.Drawing.Point(173, 190);
+            this.button_search.Location = new System.Drawing.Point(299, 103);
             this.button_search.Name = "button_search";
             this.button_search.Size = new System.Drawing.Size(141, 23);
             this.button_search.TabIndex = 3;
@@ -76,7 +77,7 @@
             // 
             // button_delete
             // 
-            this.button_delete.Location = new System.Drawing.Point(173, 246);
+            this.button_delete.Location = new System.Drawing.Point(299, 142);
             this.button_delete.Name = "button_delete";
             this.button_delete.Size = new System.Drawing.Size(141, 23);
             this.button_delete.TabIndex = 4;

@@ -40,10 +40,11 @@ namespace DatabaseSystems_Project2
                 SqlConnection con = new SqlConnection(connectionString);
 
                 // the sql command you want to execute in DBMS
-                SqlCommand cmd = new SqlCommand("UPDATE BookLoan SET BookLoan.dateIn = @dateIn, BookLoan.fine = (0.50 * DATEDIFF(day, BookLoan.dateDue, @dateIn)) WHERE BookLoan.bookID = @bookID AND BookLoan.userID = @userID;", con);
+                SqlCommand cmd = new SqlCommand("UPDATE BookLoan SET BookLoan.dateIn = @dateIn, BookLoan.fine = (0.50 * DATEDIFF(day, BookLoan.dateDue, @dateIn)) WHERE BookLoan.bookID = @bookID AND BookLoan.userID = @userID AND BookLoan.dateOut = @dateOut;", con);
 
                 cmd.Parameters.AddWithValue("@bookID", textBox_bookID.Text);
                 cmd.Parameters.AddWithValue("@userID", textBox_userID.Text);
+                cmd.Parameters.AddWithValue("@dateOut", textBox_dateOut.Text);
                 cmd.Parameters.AddWithValue("@dateIn", textBox_dateIn.Text);
 
                 //open the connection to DB
