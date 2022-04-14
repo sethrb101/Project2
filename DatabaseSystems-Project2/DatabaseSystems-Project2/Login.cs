@@ -45,7 +45,7 @@ namespace DatabaseSystems_Project2
                 //create sql connection called "con", used to connect to Students database
                 SqlConnection con = new SqlConnection(connectionString);
                 // the sql command you want to execute in DBMS
-                SqlCommand cmd = new SqlCommand("SELECT * FROM UserLogin WHERE (stuID = @username OR facID = @username) AND password = @password", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM UserLogin WHERE userID = @username AND userPassword = @password", con);
 
                 //Assign values to variables. Give TextBox: username -> @username; TextBox: password-> @password
                 cmd.Parameters.AddWithValue("@username", textBox_username.Text);
