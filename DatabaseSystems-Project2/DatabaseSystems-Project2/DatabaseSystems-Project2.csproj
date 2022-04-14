@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_checkIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_checkIn.Designer.cs">
+      <DependentUpon>Form_checkIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_checkOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="Form_facRegister.Designer.cs">
       <DependentUpon>Form_facRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_libraryPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_libraryPortal.Designer.cs">
+      <DependentUpon>Form_libraryPortal.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_stuRegister.cs">
       <SubType>Form</SubType>
@@ -101,11 +113,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_checkIn.resx">
+      <DependentUpon>Form_checkIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_checkOut.resx">
       <DependentUpon>Form_checkOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_facRegister.resx">
       <DependentUpon>Form_facRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_libraryPortal.resx">
+      <DependentUpon>Form_libraryPortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_stuRegister.resx">
       <DependentUpon>Form_stuRegister.cs</DependentUpon>

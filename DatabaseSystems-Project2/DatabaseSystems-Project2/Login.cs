@@ -75,10 +75,10 @@ namespace DatabaseSystems_Project2
                 {
                     if (textBox_username.Text == "f999")
                     {
-                        MessageBox.Show("ENTERING CHECKOUT");
+                        MessageBox.Show("ENTERING LIBRARY PORTAL");
                         this.Hide();
-                        Form_checkOut co = new Form_checkOut();
-                        co.Show();
+                        Form_libraryPortal lp = new Form_libraryPortal();
+                        lp.Show();
                         return;
                     }
                     if (textBox_username.Text.StartsWith("s"))
