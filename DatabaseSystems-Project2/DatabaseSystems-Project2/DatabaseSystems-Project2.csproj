@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_checkOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_checkOut.Designer.cs">
+      <DependentUpon>Form_checkOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_facRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_checkOut.resx">
+      <DependentUpon>Form_checkOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_facRegister.resx">
       <DependentUpon>Form_facRegister.cs</DependentUpon>
     </EmbeddedResource>

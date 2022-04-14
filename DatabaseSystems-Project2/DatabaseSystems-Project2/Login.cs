@@ -73,12 +73,21 @@ namespace DatabaseSystems_Project2
                 //if count is equal to 1, that means the SQL query get the record., then show frmMain form
                 if (count == 1)
                 {
+                    if (textBox_username.Text == "f999")
+                    {
+                        MessageBox.Show("ENTERING CHECKOUT");
+                        this.Hide();
+                        Form_checkOut co = new Form_checkOut();
+                        co.Show();
+                        return;
+                    }
                     if (textBox_username.Text.StartsWith("s"))
                     {
                         MessageBox.Show("Login Successful!");
                         this.Hide();
                         Form_updateStudent fus = new Form_updateStudent();
                         fus.Show();
+                        return;
                     }
                     if (textBox_username.Text.StartsWith("f"))
                     {
@@ -86,6 +95,7 @@ namespace DatabaseSystems_Project2
                         this.Hide();
                         Form_updateFaculty fuf = new Form_updateFaculty();
                         fuf.Show();
+                        return;
                     }
                 }
                 else
