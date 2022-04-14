@@ -123,7 +123,7 @@ namespace DatabaseSystems_Project2
         {
             this.Hide();
             Form_facRegister fr = new Form_facRegister();
-            fr.Show();
+            fr.Show(); 
         }
     }
 }
