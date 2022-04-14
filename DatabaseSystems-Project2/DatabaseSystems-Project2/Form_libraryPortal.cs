@@ -34,5 +34,23 @@ namespace DatabaseSystems_Project2
             ci.Show();
             return;
         }
+
+        private void button_search_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ENTERING SEARCH PORTAL");
+            this.Hide();
+            Form_search s = new Form_search();
+            s.Show();
+            return;
+        }
+
+        private void button_delete_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ENTERING DELETE PORTAL");
+            this.Hide();
+            Form_deleteLoans d = new Form_deleteLoans();
+            d.Show();
+            return;
+        }
     }
 }

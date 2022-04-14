@@ -75,6 +75,12 @@
     <Compile Include="Form_checkOut.Designer.cs">
       <DependentUpon>Form_checkOut.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_deleteLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_deleteLoans.Designer.cs">
+      <DependentUpon>Form_deleteLoans.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_facRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Form_libraryPortal.Designer.cs">
       <DependentUpon>Form_libraryPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_search.Designer.cs">
+      <DependentUpon>Form_search.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_stuRegister.cs">
       <SubType>Form</SubType>
@@ -119,11 +131,17 @@
     <EmbeddedResource Include="Form_checkOut.resx">
       <DependentUpon>Form_checkOut.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_deleteLoans.resx">
+      <DependentUpon>Form_deleteLoans.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_facRegister.resx">
       <DependentUpon>Form_facRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_libraryPortal.resx">
       <DependentUpon>Form_libraryPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_search.resx">
+      <DependentUpon>Form_search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_stuRegister.resx">
       <DependentUpon>Form_stuRegister.cs</DependentUpon>
