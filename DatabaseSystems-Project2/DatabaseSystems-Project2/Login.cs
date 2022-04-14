@@ -23,6 +23,8 @@ namespace DatabaseSystems_Project2
             InitializeComponent();
         }
 
+        public static string username = "";
+
         private void button_login_Click(object sender, EventArgs e)
         {
             //==========================After clicking the "Login" button, your code will do following===================================
@@ -48,6 +50,7 @@ namespace DatabaseSystems_Project2
                 SqlCommand cmd = new SqlCommand("SELECT * FROM UserLogin WHERE userID = @username AND userPassword = @password", con);
 
                 //Assign values to variables. Give TextBox: username -> @username; TextBox: password-> @password
+                username = textBox_username.Text;
                 cmd.Parameters.AddWithValue("@username", textBox_username.Text);
                 cmd.Parameters.AddWithValue("@password", textBox_password.Text);
 
@@ -70,10 +73,20 @@ namespace DatabaseSystems_Project2
                 //if count is equal to 1, that means the SQL query get the record., then show frmMain form
                 if (count == 1)
                 {
-                    MessageBox.Show("Login Successful!");
-                    this.Hide();
-                    // Form_main fm = new Form_main();
-                    //fm.Show();
+                    if (textBox_username.Text.StartsWith("s"))
+                    {
+                        MessageBox.Show("Login Successful!");
+                        this.Hide();
+                        Form_updateStudent fus = new Form_updateStudent();
+                        fus.Show();
+                    }
+                    if (textBox_username.Text.StartsWith("f"))
+                    {
+                        MessageBox.Show("Login Successful!");
+                        this.Hide();
+                        Form_updateFaculty fuf = new Form_updateFaculty();
+                        fuf.Show();
+                    }
                 }
                 else
                 {
@@ -87,6 +100,20 @@ namespace DatabaseSystems_Project2
                 MessageBox.Show(ex.Message);
             }
             //====================================================================
+        }
+
+        private void linkLabel_stuRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form_stuRegister sr = new Form_stuRegister();
+            sr.Show();
+        }
+
+        private void linkLabel_facRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form_facRegister fr = new Form_facRegister();
+            fr.Show();
         }
     }
 }

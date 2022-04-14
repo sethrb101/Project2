@@ -63,6 +63,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_facRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_facRegister.Designer.cs">
+      <DependentUpon>Form_facRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_stuRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_stuRegister.Designer.cs">
+      <DependentUpon>Form_stuRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_updateFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_updateFaculty.Designer.cs">
+      <DependentUpon>Form_updateFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_updateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_updateStudent.Designer.cs">
+      <DependentUpon>Form_updateStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +95,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_facRegister.resx">
+      <DependentUpon>Form_facRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_stuRegister.resx">
+      <DependentUpon>Form_stuRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_updateFaculty.resx">
+      <DependentUpon>Form_updateFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_updateStudent.resx">
+      <DependentUpon>Form_updateStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
