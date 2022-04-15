@@ -42,7 +42,7 @@
             // 
             // button_submit
             // 
-            this.button_submit.Location = new System.Drawing.Point(221, 235);
+            this.button_submit.Location = new System.Drawing.Point(201, 231);
             this.button_submit.Name = "button_submit";
             this.button_submit.Size = new System.Drawing.Size(75, 23);
             this.button_submit.TabIndex = 0;
@@ -53,7 +53,7 @@
             // label_username
             // 
             this.label_username.AutoSize = true;
-            this.label_username.Location = new System.Drawing.Point(134, 91);
+            this.label_username.Location = new System.Drawing.Point(114, 87);
             this.label_username.Name = "label_username";
             this.label_username.Size = new System.Drawing.Size(75, 13);
             this.label_username.TabIndex = 1;
@@ -62,7 +62,7 @@
             // label_userPassword
             // 
             this.label_userPassword.AutoSize = true;
-            this.label_userPassword.Location = new System.Drawing.Point(134, 127);
+            this.label_userPassword.Location = new System.Drawing.Point(114, 123);
             this.label_userPassword.Name = "label_userPassword";
             this.label_userPassword.Size = new System.Drawing.Size(53, 13);
             this.label_userPassword.TabIndex = 2;
@@ -70,21 +70,21 @@
             // 
             // textBox_username
             // 
-            this.textBox_username.Location = new System.Drawing.Point(221, 88);
+            this.textBox_username.Location = new System.Drawing.Point(201, 84);
             this.textBox_username.Name = "textBox_username";
             this.textBox_username.Size = new System.Drawing.Size(146, 20);
             this.textBox_username.TabIndex = 5;
             // 
             // textBox_password
             // 
-            this.textBox_password.Location = new System.Drawing.Point(221, 124);
+            this.textBox_password.Location = new System.Drawing.Point(201, 120);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.Size = new System.Drawing.Size(146, 20);
             this.textBox_password.TabIndex = 6;
             // 
             // button_return
             // 
-            this.button_return.Location = new System.Drawing.Point(397, 39);
+            this.button_return.Location = new System.Drawing.Point(369, 23);
             this.button_return.Name = "button_return";
             this.button_return.Size = new System.Drawing.Size(75, 23);
             this.button_return.TabIndex = 9;
@@ -95,7 +95,7 @@
             // label_name
             // 
             this.label_name.AutoSize = true;
-            this.label_name.Location = new System.Drawing.Point(134, 162);
+            this.label_name.Location = new System.Drawing.Point(114, 158);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(35, 13);
             this.label_name.TabIndex = 10;
@@ -105,7 +105,7 @@
             // label_year
             // 
             this.label_year.AutoSize = true;
-            this.label_year.Location = new System.Drawing.Point(134, 197);
+            this.label_year.Location = new System.Drawing.Point(114, 193);
             this.label_year.Name = "label_year";
             this.label_year.Size = new System.Drawing.Size(29, 13);
             this.label_year.TabIndex = 11;
@@ -113,14 +113,14 @@
             // 
             // textBox_name
             // 
-            this.textBox_name.Location = new System.Drawing.Point(221, 159);
+            this.textBox_name.Location = new System.Drawing.Point(201, 155);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(146, 20);
             this.textBox_name.TabIndex = 12;
             // 
             // textBox_year
             // 
-            this.textBox_year.Location = new System.Drawing.Point(221, 194);
+            this.textBox_year.Location = new System.Drawing.Point(201, 190);
             this.textBox_year.Name = "textBox_year";
             this.textBox_year.Size = new System.Drawing.Size(146, 20);
             this.textBox_year.TabIndex = 13;
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 307);
+            this.ClientSize = new System.Drawing.Size(477, 307);
             this.Controls.Add(this.textBox_year);
             this.Controls.Add(this.textBox_name);
             this.Controls.Add(this.label_year);
@@ -140,7 +140,9 @@
             this.Controls.Add(this.label_userPassword);
             this.Controls.Add(this.label_username);
             this.Controls.Add(this.button_submit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_stuRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Registration";
             this.ResumeLayout(false);
             this.PerformLayout();

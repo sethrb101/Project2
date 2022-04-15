@@ -113,7 +113,9 @@
             this.Controls.Add(this.textBox_password);
             this.Controls.Add(this.textBox_username);
             this.Controls.Add(this.button_login);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -110,7 +110,7 @@
             // 
             // button_return
             // 
-            this.button_return.Location = new System.Drawing.Point(331, 38);
+            this.button_return.Location = new System.Drawing.Point(332, 38);
             this.button_return.Name = "button_return";
             this.button_return.Size = new System.Drawing.Size(75, 23);
             this.button_return.TabIndex = 8;
@@ -132,7 +132,9 @@
             this.Controls.Add(this.label_usernameLabel);
             this.Controls.Add(this.label_studentinfo);
             this.Controls.Add(this.button_update);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_updateStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update Student Information";
             this.Load += new System.EventHandler(this.Form_updateStudent_Load);
             this.ResumeLayout(false);

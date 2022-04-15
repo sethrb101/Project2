@@ -52,5 +52,17 @@ namespace DatabaseSystems_Project2
             d.Show();
             return;
         }
+
+        private void button_return_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to return?", "Return", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                //if yes, hide this form
+                this.Hide();
+                Form_login f1 = new Form_login();
+                f1.Show();
+            }
+        }
     }
 }

@@ -36,12 +36,13 @@
             this.textBox_userID = new System.Windows.Forms.TextBox();
             this.textBox_dateOut = new System.Windows.Forms.TextBox();
             this.button_submit = new System.Windows.Forms.Button();
+            this.button_return = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_blpLabel
             // 
             this.label_blpLabel.AutoSize = true;
-            this.label_blpLabel.Location = new System.Drawing.Point(161, 41);
+            this.label_blpLabel.Location = new System.Drawing.Point(187, 74);
             this.label_blpLabel.Name = "label_blpLabel";
             this.label_blpLabel.Size = new System.Drawing.Size(69, 13);
             this.label_blpLabel.TabIndex = 0;
@@ -50,7 +51,7 @@
             // label_bookID
             // 
             this.label_bookID.AutoSize = true;
-            this.label_bookID.Location = new System.Drawing.Point(105, 83);
+            this.label_bookID.Location = new System.Drawing.Point(122, 114);
             this.label_bookID.Name = "label_bookID";
             this.label_bookID.Size = new System.Drawing.Size(46, 13);
             this.label_bookID.TabIndex = 1;
@@ -59,7 +60,7 @@
             // label_userID
             // 
             this.label_userID.AutoSize = true;
-            this.label_userID.Location = new System.Drawing.Point(105, 126);
+            this.label_userID.Location = new System.Drawing.Point(122, 157);
             this.label_userID.Name = "label_userID";
             this.label_userID.Size = new System.Drawing.Size(43, 13);
             this.label_userID.TabIndex = 2;
@@ -68,7 +69,7 @@
             // label_dateOut
             // 
             this.label_dateOut.AutoSize = true;
-            this.label_dateOut.Location = new System.Drawing.Point(105, 169);
+            this.label_dateOut.Location = new System.Drawing.Point(122, 200);
             this.label_dateOut.Name = "label_dateOut";
             this.label_dateOut.Size = new System.Drawing.Size(50, 13);
             this.label_dateOut.TabIndex = 3;
@@ -76,28 +77,28 @@
             // 
             // textBox_bookID
             // 
-            this.textBox_bookID.Location = new System.Drawing.Point(164, 80);
+            this.textBox_bookID.Location = new System.Drawing.Point(181, 111);
             this.textBox_bookID.Name = "textBox_bookID";
             this.textBox_bookID.Size = new System.Drawing.Size(138, 20);
             this.textBox_bookID.TabIndex = 4;
             // 
             // textBox_userID
             // 
-            this.textBox_userID.Location = new System.Drawing.Point(164, 123);
+            this.textBox_userID.Location = new System.Drawing.Point(181, 154);
             this.textBox_userID.Name = "textBox_userID";
             this.textBox_userID.Size = new System.Drawing.Size(138, 20);
             this.textBox_userID.TabIndex = 5;
             // 
             // textBox_dateOut
             // 
-            this.textBox_dateOut.Location = new System.Drawing.Point(164, 166);
+            this.textBox_dateOut.Location = new System.Drawing.Point(181, 197);
             this.textBox_dateOut.Name = "textBox_dateOut";
             this.textBox_dateOut.Size = new System.Drawing.Size(138, 20);
             this.textBox_dateOut.TabIndex = 6;
             // 
             // button_submit
             // 
-            this.button_submit.Location = new System.Drawing.Point(164, 217);
+            this.button_submit.Location = new System.Drawing.Point(181, 248);
             this.button_submit.Name = "button_submit";
             this.button_submit.Size = new System.Drawing.Size(75, 23);
             this.button_submit.TabIndex = 7;
@@ -105,11 +106,22 @@
             this.button_submit.UseVisualStyleBackColor = true;
             this.button_submit.Click += new System.EventHandler(this.button_submit_Click);
             // 
+            // button_return
+            // 
+            this.button_return.Location = new System.Drawing.Point(336, 24);
+            this.button_return.Name = "button_return";
+            this.button_return.Size = new System.Drawing.Size(75, 23);
+            this.button_return.TabIndex = 8;
+            this.button_return.Text = "Return";
+            this.button_return.UseVisualStyleBackColor = true;
+            this.button_return.Click += new System.EventHandler(this.button_return_Click);
+            // 
             // Form_checkOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 276);
+            this.ClientSize = new System.Drawing.Size(442, 330);
+            this.Controls.Add(this.button_return);
             this.Controls.Add(this.button_submit);
             this.Controls.Add(this.textBox_dateOut);
             this.Controls.Add(this.textBox_userID);
@@ -118,7 +130,9 @@
             this.Controls.Add(this.label_userID);
             this.Controls.Add(this.label_bookID);
             this.Controls.Add(this.label_blpLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_checkOut";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check Out";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -135,5 +149,6 @@
         private System.Windows.Forms.TextBox textBox_userID;
         private System.Windows.Forms.TextBox textBox_dateOut;
         private System.Windows.Forms.Button button_submit;
+        private System.Windows.Forms.Button button_return;
     }
 }

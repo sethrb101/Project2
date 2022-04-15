@@ -139,7 +139,9 @@
             this.Controls.Add(this.label_userPassword);
             this.Controls.Add(this.label_username);
             this.Controls.Add(this.button_submit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_facRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Faculty Registration";
             this.ResumeLayout(false);
             this.PerformLayout();

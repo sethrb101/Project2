@@ -37,6 +37,7 @@
             this.button_max = new System.Windows.Forms.Button();
             this.button_min = new System.Windows.Forms.Button();
             this.button_avg = new System.Windows.Forms.Button();
+            this.button_return = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_bookLoans)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,11 +124,22 @@
             this.button_avg.UseVisualStyleBackColor = true;
             this.button_avg.Click += new System.EventHandler(this.button_avg_Click);
             // 
+            // button_return
+            // 
+            this.button_return.Location = new System.Drawing.Point(349, 578);
+            this.button_return.Name = "button_return";
+            this.button_return.Size = new System.Drawing.Size(75, 23);
+            this.button_return.TabIndex = 11;
+            this.button_return.Text = "Return";
+            this.button_return.UseVisualStyleBackColor = true;
+            this.button_return.Click += new System.EventHandler(this.button_return_Click);
+            // 
             // Form_search
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 585);
+            this.ClientSize = new System.Drawing.Size(770, 626);
+            this.Controls.Add(this.button_return);
             this.Controls.Add(this.button_avg);
             this.Controls.Add(this.button_min);
             this.Controls.Add(this.button_max);
@@ -137,7 +149,9 @@
             this.Controls.Add(this.textBox_username);
             this.Controls.Add(this.label_sbl);
             this.Controls.Add(this.button_search);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_search";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Book Loans";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_bookLoans)).EndInit();
             this.ResumeLayout(false);
@@ -156,5 +170,6 @@
         private System.Windows.Forms.Button button_max;
         private System.Windows.Forms.Button button_min;
         private System.Windows.Forms.Button button_avg;
+        private System.Windows.Forms.Button button_return;
     }
 }
