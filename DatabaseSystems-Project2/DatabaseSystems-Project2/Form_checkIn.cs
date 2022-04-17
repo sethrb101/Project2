@@ -54,10 +54,10 @@ namespace DatabaseSystems_Project2
                 con.Close();
                 MessageBox.Show("Book is now checked in.");
 
-                //return to login page
+                //return to library portal
                 this.Hide();
-                Form_login f1 = new Form_login();
-                f1.Show();
+                Form_libraryPortal lp = new Form_libraryPortal();
+                lp.Show();
 
             }
             // catch trow out error message if there is an error

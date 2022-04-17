@@ -54,10 +54,10 @@ namespace DatabaseSystems_Project2
                     con.Close();
                     MessageBox.Show("Book is now checked out.");
 
-                    //return to login page
-                    //this.Hide();
-                    //Form_login f1 = new Form_login();
-                    //f1.Show();
+                    //return to library portal
+                    this.Hide();
+                    Form_libraryPortal lp = new Form_libraryPortal();
+                    lp.Show();
                 }
 
                 if (textBox_userID.Text.StartsWith("f"))
@@ -75,10 +75,10 @@ namespace DatabaseSystems_Project2
                     con.Close();
                     MessageBox.Show("Book is now checked out.");
 
-                    //return to login page
-                    //this.Hide();
-                    //Form_login f1 = new Form_login();
-                    //f1.Show();
+                    //return to library portal
+                    this.Hide();
+                    Form_libraryPortal lp = new Form_libraryPortal();
+                    lp.Show();
                 }
 
             }

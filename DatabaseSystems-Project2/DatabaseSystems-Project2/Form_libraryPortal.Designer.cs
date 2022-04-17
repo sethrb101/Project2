@@ -42,18 +42,19 @@
             // label_libraryPortal
             // 
             this.label_libraryPortal.AutoSize = true;
-            this.label_libraryPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_libraryPortal.Location = new System.Drawing.Point(65, 25);
+            this.label_libraryPortal.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_libraryPortal.Location = new System.Drawing.Point(93, 30);
             this.label_libraryPortal.Name = "label_libraryPortal";
-            this.label_libraryPortal.Size = new System.Drawing.Size(303, 37);
+            this.label_libraryPortal.Size = new System.Drawing.Size(325, 39);
             this.label_libraryPortal.TabIndex = 0;
             this.label_libraryPortal.Text = "LIBRARY PORTAL";
+            this.label_libraryPortal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button_checkOut
             // 
             this.button_checkOut.Location = new System.Drawing.Point(63, 93);
             this.button_checkOut.Name = "button_checkOut";
-            this.button_checkOut.Size = new System.Drawing.Size(97, 23);
+            this.button_checkOut.Size = new System.Drawing.Size(141, 42);
             this.button_checkOut.TabIndex = 1;
             this.button_checkOut.Text = "CHECK OUT";
             this.button_checkOut.UseVisualStyleBackColor = true;
@@ -61,9 +62,9 @@
             // 
             // button_checkIn
             // 
-            this.button_checkIn.Location = new System.Drawing.Point(63, 132);
+            this.button_checkIn.Location = new System.Drawing.Point(63, 153);
             this.button_checkIn.Name = "button_checkIn";
-            this.button_checkIn.Size = new System.Drawing.Size(97, 23);
+            this.button_checkIn.Size = new System.Drawing.Size(141, 42);
             this.button_checkIn.TabIndex = 2;
             this.button_checkIn.Text = "CHECK IN";
             this.button_checkIn.UseVisualStyleBackColor = true;
@@ -71,9 +72,9 @@
             // 
             // button_search
             // 
-            this.button_search.Location = new System.Drawing.Point(236, 93);
+            this.button_search.Location = new System.Drawing.Point(301, 93);
             this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(141, 23);
+            this.button_search.Size = new System.Drawing.Size(141, 42);
             this.button_search.TabIndex = 3;
             this.button_search.Text = "SEARCH BOOK LOANS";
             this.button_search.UseVisualStyleBackColor = true;
@@ -81,9 +82,9 @@
             // 
             // button_delete
             // 
-            this.button_delete.Location = new System.Drawing.Point(236, 132);
+            this.button_delete.Location = new System.Drawing.Point(301, 153);
             this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(141, 23);
+            this.button_delete.Size = new System.Drawing.Size(141, 42);
             this.button_delete.TabIndex = 4;
             this.button_delete.Text = "DELETE BOOK LOANS";
             this.button_delete.UseVisualStyleBackColor = true;
@@ -91,7 +92,7 @@
             // 
             // button_return
             // 
-            this.button_return.Location = new System.Drawing.Point(180, 404);
+            this.button_return.Location = new System.Drawing.Point(215, 404);
             this.button_return.Name = "button_return";
             this.button_return.Size = new System.Drawing.Size(75, 23);
             this.button_return.TabIndex = 5;
@@ -103,9 +104,9 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(63, 215);
+            this.pictureBox2.Location = new System.Drawing.Point(63, 243);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(314, 160);
+            this.pictureBox2.Size = new System.Drawing.Size(379, 132);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -114,7 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 454);
+            this.ClientSize = new System.Drawing.Size(502, 454);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label_libraryPortal);
             this.Controls.Add(this.button_delete);
