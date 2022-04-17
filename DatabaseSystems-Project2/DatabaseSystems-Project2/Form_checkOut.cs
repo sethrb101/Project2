@@ -55,9 +55,9 @@ namespace DatabaseSystems_Project2
                     MessageBox.Show("Book is now checked out.");
 
                     //return to login page
-                    this.Hide();
-                    Form_login f1 = new Form_login();
-                    f1.Show();
+                    //this.Hide();
+                    //Form_login f1 = new Form_login();
+                    //f1.Show();
                 }
 
                 if (textBox_userID.Text.StartsWith("f"))
