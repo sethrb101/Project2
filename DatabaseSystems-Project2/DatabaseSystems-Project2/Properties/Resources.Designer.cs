@@ -63,19 +63,9 @@ namespace DatabaseSystems_Project2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap books_clip_art {
+        internal static System.Drawing.Bitmap real_books_pic {
             get {
-                object obj = ResourceManager.GetObject("books clip art", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap pi5rkyKrT {
-            get {
-                object obj = ResourceManager.GetObject("pi5rkyKrT", resourceCulture);
+                object obj = ResourceManager.GetObject("real books pic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
